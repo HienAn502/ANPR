@@ -20,7 +20,7 @@ coco_model = YOLO('model/yolov8n.pt')
 license_plate_detector = YOLO('model/license_plate_detector.pt')
 
 # load video
-cap = cv2.VideoCapture('./sample_5.mp4')
+cap = cv2.VideoCapture('sample.mp4')
 
 # from coco.names: https://github.com/pjreddie/darknet/blob/master/data/coco.names
 # car, motorbike, bus, truck
@@ -106,7 +106,7 @@ while ret:
 final_lps = shorten_result(car_results)
 
 # write results:
-write_csv(results, 'result/result_sample1.csv')
+write_csv(results, 'result/result.csv')
 write_csv_from_json(final_lps, 'result/shorten_result.csv')
 
 with open('result/full_result.json', 'w') as f:

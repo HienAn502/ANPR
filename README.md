@@ -36,13 +36,13 @@ path: X:\xxxx\ANPR\dataset
 **main.py**
 
 - Using 2 models: coco model for vehicle detection and our model for license plate detection
-- Testing on video sample_5.mp4 and recognition license number using OCR (easyocr)
+- Applying on video sample.mp4 and recognize license number using OCR (easyocr)
 
 **util.py**
 
 - Method: write_csv(results, output_path)
 ```text
-Write the rsults to a CSV file.
+Write the results to a CSV file.
 
     Args:
         results (dict): Dictionary containing the results.
