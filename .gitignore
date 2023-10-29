@@ -1,4 +1,6 @@
 .idea/
+venv/
+.venv/
 dataset/
 sort/
 add_missing_data.py
